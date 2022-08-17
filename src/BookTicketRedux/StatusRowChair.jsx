@@ -6,34 +6,34 @@ class StatusRowChair extends Component {
     return (
       <div>
         <div className="mt-5">
-          <button className="gheDuocChon" style={{ marginLeft: -30 }}></button>
-          <span className="text-success" style={{ fontSize: "20px" }}>
-            GHẾ ĐÃ ĐẶT
-          </span>
+          <div className="d-flex  align-items-center mb-2">
+            <button className="gheDuocChon rounded-circle me-2"></button>
+            <div className="text-secondary" style={{ fontSize: "20px" }}>
+              GHẾ ĐÃ ĐẶT
+            </div>
+          </div>
 
-          <br />
+          <div className="d-flex  align-items-center mb-2">
+            <button className="gheDangChon rounded-circle me-2"></button>
+            <div className="text-secondary" style={{ fontSize: "20px" }}>
+              GHẾ ĐANG ĐẶT
+            </div>
+          </div>
 
-          <button className="gheDangChon"></button>
-          <span className="text-success" style={{ fontSize: "20px" }}>
-            GHẾ ĐANG ĐẶT
-          </span>
-
-          <br />
-
-          <button className="ghe" style={{ marginLeft: 0 }}></button>
-          <span className="text-primary" style={{ fontSize: "20px" }}>
+          <div className="d-flex  align-items-center mb-2">
+            <button className="ghe rounded-circle me-2"></button>
+            <div className="text-secondary" style={{ fontSize: "20px" }}>
             GHẾ CHƯA ĐẶT
-          </span>
-
-          <br />
+            </div>
+          </div>
         </div>
 
-        <div className="mt-5">
-          <table class="table" border="2">
+        <div className="mt-5 ">
+          <table class="table bg-secondary text-center text-light" border="2">
             <thead>
               <tr>
                 <th>Số Ghế</th>
-                <th>Gía</th>
+                <th>Giá</th>
                 <th>Hủy</th>
               </tr>
             </thead>
@@ -51,6 +51,7 @@ class StatusRowChair extends Component {
                             soGhe: gheDangDat.name,
                           });
                         }}
+                        className="btn btn-danger"
                       >
                         Hủy
                       </button>

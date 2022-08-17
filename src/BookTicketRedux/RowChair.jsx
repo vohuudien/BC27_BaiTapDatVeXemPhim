@@ -36,7 +36,7 @@ class RowChair extends Component {
   render() {
     return (
       <div
-        className="text-danger text-start ml-5 mt-5"
+        className="text-danger text-start ml-5 mt-5 d-flex justify-content-between align-items-center  "
         style={{ fontSize: "15px" }}
       >
         {this.props.rowChair.row} {this.renderChair()}
